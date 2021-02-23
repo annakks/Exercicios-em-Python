@@ -1,0 +1,70 @@
+Exercicio 1
+
+n1=int(input('N1:'))
+n2=int(input('N2:'))
+print(n1+n2)
+
+Exercicio 2 
+
+m=int(input('metros:'))
+print(f'milimetros:{m*1000}')
+
+Exercico 3
+
+d=int(input('dias:'))
+h=int(input('horas:'))
+m=int(input('minutos:'))
+s=int(input('segundos:'))
+print(f"{d*24*60*60+h*60*60+m*60+s} segundos")
+
+Exercicio 4 
+
+salario=float(input('salario:'))
+aumento=float(input('porcentagem%:'))
+aumento=salario*aumento/100
+novo=salario+aumento
+print(f'salario:R${novo:.2f}')
+
+Exercicio 5
+
+preço=float(input('Mercadoria: R$'))
+desconto=float(input('porcentagem%:'))
+desconto=preço*desconto/100
+print(f'preço:R${preço-desconto:.2f}')
+
+Exercicio 6
+
+distancia=float(input('Distancia: KM '))
+velocidade=float(input('Velocidade Media: Km/h '))
+tempo=distancia/velocidade
+print(f'Tempo:{tempo:.1f}')
+
+Exercicio 7
+
+t=float(input('Graus Celsius: '))
+f=9*t/5+32
+print(f'Graus Fahrenheit: {f:.2f}')
+
+Exercicio 8
+
+f=float(input('Graus Fahrenheit: '))
+c=(f-32)/9*5
+print(f'Graus Celsius: {c:.2f}')
+
+Exercicio 9
+
+distancia=float(input('Distancia: KM '))
+dias=float(input('Dias de Locação: '))
+preço=dias*60+distancia*.15
+print(f'Total R${preço:.2f}')
+
+Exercicio 10
+
+quantidade=float(input('Cigarros por dia: '))
+anos=float(input('Anos de Fumo: '))
+dias=(anos*365)*(quantidade/(60*24*.10))
+print(f'Perdeu:{dias:.2f} dias')
+
+Exercicio 11
+
+print(len(str(2*1000000)))
