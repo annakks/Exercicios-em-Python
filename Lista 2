@@ -1,0 +1,88 @@
+Exercicio 1
+
+a = int(input('Insira um lado: '))
+b = int(input('Insira outro lado: '))
+c = int(input('Insira um terceiro lado: '))
+if a > b + c or b > a + c or c > a + b:
+    print('Os lados não formam um triângulo')
+elif a == b == c:
+    print('É um triângulo Equilátero')
+elif a == b or b == c or a == c:
+    print('É um triângulo Isóceles')
+else:
+    print('É um triângulo Escaleno')
+
+Exercicio 2
+
+ano=int(input('Ano: '))
+if ano%4==0 and (ano%100!=0 or ano%400==0):
+  print ('Bissexto')
+else:
+  print ('Não é bissexto')
+
+Exercicio 3
+
+peso=float(input('Peso do peixe: '))
+if peso>50:
+    excesso=peso-50
+    multa=excesso*4
+else:
+    multa=excesso=0
+print (f'Há excesso de {excesso:.2f} kg')    
+print (f'Multa de R$ {multa:.2f}')
+
+Exercicio 4
+
+a=int(input('Informe um número: '))
+b=int(input('Informe outro número: '))
+c=int(input('Informe um tercero número: '))
+if a>=b and a>=c:
+    print (f'O numero maior é o {a}')
+elif b >= c:
+    print (f'O numero maior é o {b}')
+else:
+    print (f'O numero maior é o {c:}')
+
+Exercicio 5
+
+a=int(input('Informe um número: '))
+b=int(input('Informe outro número: '))
+c=int(input('Informe um tercero número: '))
+if  a>=b  and  a>=c:
+    print (f'O numero maior é o { a } ')
+elif  b>=c :
+    print (f'O numero maior é o { b } ')
+else :
+    print (f'O numero maior é o { c } ')
+if  a<=b  and  a<=c:
+    print (f'O numero  nenor é { a } ')
+elif  b<=c:
+    print (f'O numero  menor é { b } ')
+else :
+    print (f'O numero  menor é { c } ')
+
+Exercicio 6 
+
+salario=float(input('Quanto você ganha por hora: '))
+horas=int(input('Quantas horas você tralhada por mês: '))
+bruto=salario*horas
+ir=bruto*0.11
+inss=bruto*0.08
+sindicato=bruto*0.05
+liquido=bruto-ir-inss-sindicato
+print(f'Salário Bruto: R$ {bruto:.2f}')
+print(f'Ir (11%): R$ {ir:.2f}')
+print(f'Inss (8%): R$ {inss:.2f}')
+print(f'Sindicato (5%): R$ {sindicato:.2f}')
+print(f'Salário Líquido: R$ {liquido:.2f}')
+
+Exercicio 7
+
+m=int(input('Quantos metros quadrados tem a área: '))
+if m%54==0:
+  latas=m/54
+else:
+  latas=(m/54)+1
+valor = latas * 80
+print (f'Total de {latas:.0f} latas')
+print (f'Preço: R$ {valor:.2f}')
