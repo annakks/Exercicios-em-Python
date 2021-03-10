@@ -1,0 +1,44 @@
+Exercicio 1
+
+x=int(input('Digite uma nota: '))
+while x<0 or x>10:
+  print ('Nota invalida')
+  x=int(input('Digite outra nota: ')) 
+
+Exercicio 2
+
+nome=input('Nome: ')
+senha=input('Senha: ')
+while nome==senha:
+  print ('Senha não autorizada, usar senha diferente do nome')
+  nome=input('Nome: ')
+  senha=input('Senha: ')
+
+Exercicio 3
+
+A=80000
+B=200000
+anos=0
+while A<=B:
+  A=A+(A*0.03)
+  B=B+(B*0.015)
+  anos=anos+1
+print (anos)
+
+Exercicio 4
+
+x=int(input("Dé um valor para Fx: "))
+a,b=1,1
+c=1
+while c<=x-2:
+    a,b=b,a+b
+    c=c+1
+print (b)
+
+Exercicio 5
+
+a=int(input('Valor de a: '))
+b=int(input('Valor de b: '))
+while a%b != 0:
+    a,b=b,a%b
+print (f'mdc = {b}')
